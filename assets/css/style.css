@@ -1,12 +1,24 @@
+body {
+    padding-top: 80px;
+}
+
+.navbar {
+    transition: box-shadow 0.3s ease;
+}
+
+body.scrolled .navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .btn-eco-light {
-    background-color: #3b850d; /* light green */
-    color: #fff; /* white text */
+    background-color: #3b850d;
+    color: #fff;
     border: none;
     transition: background-color 0.3s;
 }
 
 .btn-eco-light:hover {
-    background-color: #8CC157; 
+    background-color: #8CC157;
     color: #fff;
 }
 
@@ -24,7 +36,7 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #6CC24A; /* eco green */
+    background-color: #3b850d;
     border-radius: 50%;
     padding: 10px;
 }
@@ -33,11 +45,247 @@
     display: inline-block;
     margin: 0 1.5rem;
     font-weight: 600;
-    color: #212529; /* dark text */
+    color: #212529;
+    /* dark text */
     transition: transform 0.3s, color 0.3s;
 }
 
 .clients-section h5:hover {
-    color: #6CC24A; /* eco green on hover */
+    color: #1b3710;
+    /* eco green on hover */
     transform: scale(1.1);
+}
+
+/* Hero animations */
+.hero-section h1,
+.hero-section p,
+.hero-section .btn {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 1s forwards;
+}
+
+.hero-section h1 {
+    animation-delay: 0.2s;
+}
+
+.hero-section p {
+    animation-delay: 0.4s;
+}
+
+.hero-section .btn {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.services-section .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.team-section .card img {
+    transition: transform 0.3s;
+}
+
+.team-section .card img:hover {
+    transform: scale(1.05);
+}
+
+.clients-section h5 {
+    transition: transform 0.3s, color 0.3s;
+}
+
+.clients-section h5:hover {
+    transform: scale(1.1);
+    color: #6CC24A;
+    /* eco green */
+}
+
+/* Hero section image on mobile */
+@media (max-width: 768px) {
+    .hero-section .col-lg-6 {
+        text-align: center !important;
+    }
+
+    .hero-section img {
+        margin-top: 20px;
+    }
+}
+
+/* Services cards spacing on small screens */
+@media (max-width: 576px) {
+    .services-section .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Team section on small screens */
+@media (max-width: 768px) {
+    .team-section .card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.leaf-icon {
+    color: #61c155;
+    font-size: 1rem;
+    margin-right: 8px;
+    transition: .3s ease-in-out;
+}
+
+li:hover .leaf-icon {
+    color: #198754;
+    /* darker green */
+    transform: scale(1.2);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li svg {
+    margin-right: 8px;
+    color: #4CAF50;
+    /* light green */
+    transition: color .3s ease;
+}
+
+ul li:hover svg {
+    color: #2E7D32;
+    /* darker green on hover */
+}
+
+.service-section {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all .8s ease-out;
+}
+
+.service-section.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.contact-section {
+    padding: 60px 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+.contact-details {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.form-container {
+    margin-top: 60px;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-submit {
+    width: 100px;
+    text-align: center;
+}
+
+/* --- PROCESSES PAGE STYLES --- */
+
+.processes-hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pages-specific images/process-banner-image.png') no-repeat center center; 
+    background-size: cover;
+    min-height: 40vh; 
+    padding-top: 100px;
+}
+
+.processes-hero-section h1 {
+    font-size: 3.5rem;
+}
+
+.process-card {
+    border-left: 5px solid #3b850d; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    height: 100%; 
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.process-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3b850d;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.process-icon {
+    font-size: 1.8rem;
+    color: #3b850d;
+    flex-shrink: 0;
+}
+
+.process-item-final .process-card {
+    border-left: none;
+    background-color: #e6ffe6; 
+}
+
+.process-number-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1b3710;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.process-icon-final {
+    font-size: 2.5rem;
+    color: #1b3710;
+    flex-shrink: 0;
 }
