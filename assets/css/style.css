@@ -289,3 +289,210 @@ ul li:hover svg {
     color: #1b3710;
     flex-shrink: 0;
 }
+
+/*CASE STUDIES PAGE*/
+
+/* Hero Section */
+.case-studies-hero-section {
+    /* Use a suitable background image/color */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pages-specific images/case-study-air-compressed-image.png') no-repeat center center; 
+    background-size: cover;
+    min-height: 40vh; /* Adjust height as needed */
+    padding-top: 100px; /* To account for fixed header */
+}
+
+.case-studies-hero-section h1 {
+    font-size: 3.5rem;
+}
+
+/* Card Styling */
+.case-study-card {
+    border: none;
+    overflow: hidden; /* To hide overflow from image scaling */
+    transition: all 0.3s ease-in-out;
+}
+
+.case-study-card img {
+    height: 200px; /* Fixed height for image consistency */
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.case-study-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.case-study-card:hover img {
+    transform: scale(1.05);
+}
+
+.case-study-card .card-footer {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+/* Read More Button Styling */
+.read-more-btn {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #3b850d !important;
+    color: #fff !important;
+    border-color: #3b850d !important;
+}
+
+/* Badge for Category */
+.badge.bg-success {
+    background-color: #3b850d !important;
+}
+
+/* Quote Box Styling (Matching the green background on the target site) */
+.quote-box {
+    background-color: #3b850d; /* Eco Green */
+    border-left: 5px solid #1b3710; /* Darker green line */
+    font-size: 1.1rem;
+}
+
+.quote-box .blockquote-footer {
+    opacity: 0.9;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+/* Result Boxes (The three boxes showing stats) */
+.result-box {
+    border: 1px solid #e9ecef !important;
+    transition: all 0.3s;
+}
+
+.result-box:hover {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    background-color: #f8f9fa;
+}
+
+/* Sidebar Styling (make it sticky on large screens to stay in view) */
+@media (min-width: 992px) {
+    .sidebar-sticky {
+        position: sticky;
+        top: 100px; /* Adjust based on your fixed header's height */
+    }
+}
+
+/* Hover effect for the "Other Case Studies" list */
+.list-group-item-action:hover {
+    background-color: #f0fff0 !important; /* Very light green on hover */
+}
+
+/* --- TEAM PAGE STYLES --- */
+
+.case-studies-hero-section {
+    /* Using a linear gradient over a placeholder image or just a color */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pages-specific images/team-banner-image.png') no-repeat center center; 
+    background-size: cover;
+    min-height: 40vh; 
+    padding-top: 100px;
+}
+
+.case-studies-hero-section h1 {
+    font-size: 3.5rem;
+}
+
+/* Team Member Card Styling */
+.team-section .team-member-img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 50%; /* Make images circular */
+    margin-bottom: 15px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-section .card {
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.team-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.team-section .card-title {
+    color: #1b3710; /* Darker Green */
+    font-weight: 700;
+}
+
+.team-section .card-subtitle {
+    color: #3b850d; /* Eco Green */
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Social Icons */
+.team-section .social-links a {
+    color: #6c757d; /* Muted color */
+    transition: color 0.3s;
+}
+
+.team-section .social-links a:hover {
+    color: #3b850d; /* Eco Green on hover */
+}
+
+/* --- NEW STYLES FOR ABOUT.HTML --- */
+
+/* New Custom Light Green Color for section backgrounds */
+.bg-light-green {
+    background-color: #f0fff0 !important; /* Very soft light green */
+}
+
+/* Specific Hero Section Style for About Page */
+.about-hero-section {
+    /* Assuming a placeholder image is available, otherwise this will be solid dark green */
+    background: linear-gradient(rgba(27, 55, 16, 0.8), rgba(27, 55, 16, 0.9)), url('../img/pages-specific images/world-earth-day-hands-holding-green-earth-image.png') no-repeat center center; 
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    min-height: 50vh; 
+}
+
+.about-hero-section .lead-xl {
+    font-size: 1.75rem;
+    opacity: 0.9;
+}
+
+/* Mission Section Highlight Box */
+.mission-section .highlight-box {
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #3b850d; /* Eco Green Accent */
+    background-color: #fcfcfc;
+    text-align: left;
+}
+
+/* Expertise Section */
+.expertise-section {
+    /* Using the new light green background */
+}
+
+.expertise-section .sector-tag {
+    /* Styling for the industry boxes */
+    border: 1px solid #e9ecef;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.expertise-section .sector-tag:hover {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    border-color: #3b850d;
+}
+
+/* Vision and Final CTA Section (Dark Background) */
+.vision-cta-section {
+    /* Using dark background for strong contrast */
+    background-color: #1b3710 !important; /* Dark Green */
+}

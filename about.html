@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Synerpro Solutions LLP</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/synerpro-solutions-icon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <section class="about-hero-section py-5 text-white">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-3">Synerpro Solutions LLP</h1>
+            <h2 class="lead-xl fw-light">
+                Specializing in Energy Auditing, Project Management, and Reducing Carbon Footprints.
+            </h2>
+        </div>
+    </section>
+
+    <section class="mission-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8 text-center">
+                    <h2 class="display-6 fw-bold text-dark mb-4">About Synerpro</h2>
+                    <p class="fs-4 fst-italic text-muted">
+                        SYNERPRO SOLUTIONS is the establishment fully specialized in Energy Auditing and Project Management Consulting services to reduce energy expense and carbon footprints. 
+                    </p>
+                    <p class="fs-5">
+                        We offer all-inclusive services from energy saving opportunities identification to the solution application based on analysis and consulting.
+                    </p>
+                    
+                    <div class="highlight-box p-4 p-md-5 mt-5 rounded shadow-sm">
+                        <h4 class="fw-bold text-success mb-3">Driving Sustainable Change</h4>
+                        <p class="mb-0">
+                            The energy efficiency assessment could identify losses in the energy stream and has potential to save energy cost per output, subsequently reducing the total cost of production.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="expertise-section py-5 bg-light-green">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="fw-bold text-dark mb-4">Our Accredited Team</h3>
+                    <p class="fs-5">
+                        We are a team of energy saving professionals comprising BEE Accredited Energy Auditors, Certified Energy Auditors & Managers, and ASQ Certified Black Belts.
+                    </p>
+                    <p class="fs-5 fw-bold text-success">
+                        Our core team has experience of successfully conducting more than <span class="display-4 fw-bolder d-inline-block mx-1">200+</span> projects.
+                    </p>
+                    
+                    <div class="d-flex align-items-center mt-4 pt-2">
+                        <i class="bi bi-person-badge-fill text-success fs-2 me-3"></i>
+                        <p class="mb-0 fw-bold">Managed by certified auditors and energy managers with over 20 years of sector experience.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="fw-bold text-dark mb-4">Experience Across Multiple Sectors</h3>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="sector-tag p-3 rounded bg-white shadow-sm">
+                                <i class="bi bi-gear-fill text-success me-2"></i> Petroleum & Steel Industry
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="sector-tag p-3 rounded bg-white shadow-sm">
+                                <i class="bi bi-house-door-fill text-success me-2"></i> Commercial & Hospitality
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="sector-tag p-3 rounded bg-white shadow-sm">
+                                <i class="bi bi-truck text-success me-2"></i> Automotive & Engineering
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="sector-tag p-3 rounded bg-white shadow-sm">
+                                <i class="bi bi-hospital-fill text-success me-2"></i> Pharmaceutical & Cement
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="vision-cta-section py-5 text-center bg-dark text-white">
+        <div class="container">
+            <h3 class="fw-bold mb-3 display-5 text-warning">Build an Energy Saving Culture</h3>
+            <p class="lead mb-4">
+                The ever increasing cost of energy necessitates proactive 'Energy Efficiency Assessment'. 
+                We intend to build an energy saving culture to engrain in your organization for long term benefits.
+            </p>
+            <a href="contact.html" class="btn btn-lg btn-warning fw-bold mt-3">Start Your Energy Audit Today</a>
+        </div>
+    </section>
+
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        function importComponent(id, filePath) {
+            return fetch(filePath)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById(id).innerHTML = html;
+                })
+                .catch(error => console.error('Error loading component:', error));
+        }
+
+        function updateYear() {
+            const yearElement = document.getElementById('year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        }
+
+        importComponent("header-placeholder", "components/header.html");
+        importComponent("footer-placeholder", "components/footer.html").then(updateYear);
+    </script>
+
+</body>
+
+</html>
