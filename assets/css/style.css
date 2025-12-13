@@ -56,6 +56,15 @@ body.scrolled .navbar {
     transform: scale(1.1);
 }
 
+.clients-section h3{
+    display: inline-block;
+    margin: 0 1.5rem;
+    font-weight: 600;
+    color: #0c6314;
+    /* dark text */
+    transition: transform 0.3s, color 0.3s;
+}
+
 /* Hero animations */
 .hero-section h1,
 .hero-section p,
@@ -83,6 +92,42 @@ body.scrolled .navbar {
         transform: translateY(0);
     }
 }
+
+/* --- UNIFIED PAGE HERO STYLE --- */
+.page-hero-section {
+    /* Base styling for all non-home page heroes */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) no-repeat center center;
+    background-size: cover;
+    min-height: 40vh;
+    padding-top: 100px;
+}
+
+/* Page-specific background images */
+.services-hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pages-specific images/sustainable-environmental-services-image.png');
+}
+
+.processes-hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pages-specific images/process-banner-image.png');
+    background-size: cover;
+}
+
+.case-studies-hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pages-specific images/case-study-air-compressed-image.png');
+    background-size: cover;
+
+}
+
+.team-hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pages-specific images/team-banner-image.png');
+    background-size: cover; 
+}
+
+.about-hero-section {
+    background: linear-gradient(rgba(27, 55, 16, 0.8), rgba(27, 55, 16, 0.9)), url('../img/pages-specific images/world-earth-day-hands-holding-green-earth-image.png') no-repeat center center;
+}
+
+/* --- END UNIFIED PAGE HERO STYLE --- */
 
 .services-section .card {
     transition: transform 0.3s, box-shadow 0.3s;
@@ -222,22 +267,16 @@ ul li:hover svg {
 
 /* --- PROCESSES PAGE STYLES --- */
 
-.processes-hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pages-specific images/process-banner-image.png') no-repeat center center; 
-    background-size: cover;
-    min-height: 40vh; 
-    padding-top: 100px;
-}
-
+/* Removed duplicate min-height and padding-top from here */
 .processes-hero-section h1 {
     font-size: 3.5rem;
 }
 
 .process-card {
-    border-left: 5px solid #3b850d; 
+    border-left: 5px solid #3b850d;
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: #fff;
-    height: 100%; 
+    height: 100%;
 }
 
 .process-card:hover {
@@ -267,7 +306,7 @@ ul li:hover svg {
 
 .process-item-final .process-card {
     border-left: none;
-    background-color: #e6ffe6; 
+    background-color: #e6ffe6;
 }
 
 .process-number-final {
@@ -293,14 +332,7 @@ ul li:hover svg {
 /*CASE STUDIES PAGE*/
 
 /* Hero Section */
-.case-studies-hero-section {
-    /* Use a suitable background image/color */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pages-specific images/case-study-air-compressed-image.png') no-repeat center center; 
-    background-size: cover;
-    min-height: 40vh; /* Adjust height as needed */
-    padding-top: 100px; /* To account for fixed header */
-}
-
+/* Removed duplicate min-height and padding-top from here */
 .case-studies-hero-section h1 {
     font-size: 3.5rem;
 }
@@ -308,12 +340,14 @@ ul li:hover svg {
 /* Card Styling */
 .case-study-card {
     border: none;
-    overflow: hidden; /* To hide overflow from image scaling */
+    overflow: hidden;
+    /* To hide overflow from image scaling */
     transition: all 0.3s ease-in-out;
 }
 
 .case-study-card img {
-    height: 200px; /* Fixed height for image consistency */
+    height: 200px;
+    /* Fixed height for image consistency */
     object-fit: cover;
     transition: transform 0.5s ease;
 }
@@ -350,8 +384,10 @@ ul li:hover svg {
 
 /* Quote Box Styling (Matching the green background on the target site) */
 .quote-box {
-    background-color: #3b850d; /* Eco Green */
-    border-left: 5px solid #1b3710; /* Darker green line */
+    background-color: #3b850d;
+    /* Eco Green */
+    border-left: 5px solid #1b3710;
+    /* Darker green line */
     font-size: 1.1rem;
 }
 
@@ -377,35 +413,31 @@ ul li:hover svg {
 @media (min-width: 992px) {
     .sidebar-sticky {
         position: sticky;
-        top: 100px; /* Adjust based on your fixed header's height */
+        top: 100px;
+        /* Adjust based on your fixed header's height */
     }
 }
 
 /* Hover effect for the "Other Case Studies" list */
 .list-group-item-action:hover {
-    background-color: #f0fff0 !important; /* Very light green on hover */
+    background-color: #f0fff0 !important;
+    /* Very light green on hover */
 }
 
 /* --- TEAM PAGE STYLES --- */
 
-.case-studies-hero-section {
-    /* Using a linear gradient over a placeholder image or just a color */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pages-specific images/team-banner-image.png') no-repeat center center; 
-    background-size: cover;
-    min-height: 40vh; 
-    padding-top: 100px;
-}
-
+/* Removed duplicate min-height and padding-top from here */
 .case-studies-hero-section h1 {
     font-size: 3.5rem;
 }
 
 /* Team Member Card Styling */
 .team-section .team-member-img {
-    width: 150px; 
-    height: 150px; 
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 50%; /* Make images circular */
+    border-radius: 50%;
+    /* Make images circular */
     margin-bottom: 15px;
     border: 5px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -423,42 +455,40 @@ ul li:hover svg {
 }
 
 .team-section .card-title {
-    color: #1b3710; /* Darker Green */
+    color: #1b3710;
+    /* Darker Green */
     font-weight: 700;
 }
 
 .team-section .card-subtitle {
-    color: #3b850d; /* Eco Green */
+    color: #3b850d;
+    /* Eco Green */
     font-weight: 500;
     margin-bottom: 10px;
 }
 
 /* Social Icons */
 .team-section .social-links a {
-    color: #6c757d; /* Muted color */
+    color: #6c757d;
+    /* Muted color */
     transition: color 0.3s;
 }
 
 .team-section .social-links a:hover {
-    color: #3b850d; /* Eco Green on hover */
+    color: #3b850d;
+    /* Eco Green on hover */
 }
 
 /* --- NEW STYLES FOR ABOUT.HTML --- */
 
 /* New Custom Light Green Color for section backgrounds */
 .bg-light-green {
-    background-color: #f0fff0 !important; /* Very soft light green */
+    background-color: #f0fff0 !important;
+    /* Very soft light green */
 }
 
 /* Specific Hero Section Style for About Page */
-.about-hero-section {
-    /* Assuming a placeholder image is available, otherwise this will be solid dark green */
-    background: linear-gradient(rgba(27, 55, 16, 0.8), rgba(27, 55, 16, 0.9)), url('../img/pages-specific images/world-earth-day-hands-holding-green-earth-image.png') no-repeat center center; 
-    background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    min-height: 50vh; 
-}
+/* This section was left with the full background property as its gradient color values were different (darker) */
 
 .about-hero-section .lead-xl {
     font-size: 1.75rem;
@@ -468,7 +498,8 @@ ul li:hover svg {
 /* Mission Section Highlight Box */
 .mission-section .highlight-box {
     border: 1px solid #e0e0e0;
-    border-left: 5px solid #3b850d; /* Eco Green Accent */
+    border-left: 5px solid #3b850d;
+    /* Eco Green Accent */
     background-color: #fcfcfc;
     text-align: left;
 }
@@ -494,5 +525,6 @@ ul li:hover svg {
 /* Vision and Final CTA Section (Dark Background) */
 .vision-cta-section {
     /* Using dark background for strong contrast */
-    background-color: #1b3710 !important; /* Dark Green */
+    background-color: #1b3710 !important;
+    /* Dark Green */
 }

@@ -22,7 +22,8 @@
         <div class="container">
             <h1 class="display-4 fw-bold mb-3 scroll-reveal">Our Case Studies</h1>
             <p class="lead scroll-reveal" style="animation-delay: 0.3s;">
-                Real-world examples of how we have helped clients achieve massive energy savings and sustainability goals.
+                Real-world examples of how we have helped clients achieve massive energy savings and sustainability
+                goals.
             </p>
         </div>
     </section>
@@ -35,14 +36,17 @@
             </div>
 
             <div class="row g-4">
+                
                 <div class="col-lg-4 col-md-6">
                     <div class="card case-study-card h-100 shadow-sm">
-                        <img src="assets/img/pages-specific images/compressed-air-case-study-image.png" class="card-img-top" alt="Compressed Air System">
+                        <img src="assets/img/pages-specific images/compressed-air-case-study-image.png"
+                            class="card-img-top" alt="Compressed Air System Energy Audit">
                         <div class="card-body">
                             <span class="badge bg-success mb-2">Automotive Component Manufacturing</span>
                             <h5 class="card-title fw-bold">Energy Saving in Compressed Air System</h5>
                             <p class="card-text">
-                                Detailed energy audit leading to steam system optimization and a 15.4 Lakhs INR annual savings.
+                                Detailed energy audit leading to compressed air system optimization and a 15.4 Lakhs INR annual
+                                savings.
                             </p>
                         </div>
                         <div class="card-footer bg-white border-0">
@@ -52,8 +56,28 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card case-study-card h-100 shadow-sm">
+                        <img src="assets/img/pages-specific images/case-study-HVAC-system-image.png"
+                            class="card-img-top" alt="HVAC System Energy Audit for Hospital">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Hospital - HVAC Systems</span>
+                            <h5 class="card-title fw-bold">Energy Saving in HVAC System</h5>
+                            <p class="card-text">
+                                A detailed energy audit leading to centralized HVAC system optimization for a Super Speciality Hospital Unit and a 14.6 Lakhs INR annual savings.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="case-study-hvac-system.html" class="btn btn-outline-success read-more-btn">
+                                Read More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-        </div>
+
+            </div>
+            </div>
     </section>
 
 
@@ -74,11 +98,14 @@
         }
 
         function updateYear() {
-            document.getElementById('year').textContent = new Date().getFullYear();
+            const yearElement = document.getElementById('year');
+            if (yearElement) {
+                 yearElement.textContent = new Date().getFullYear();
+            }
         }
 
-        importComponent("header-placeholder", "components/header.html");
-        importComponent("footer-placeholder", "components/footer.html").then(updateYear);
+        importComponent("header-placeholder", "header.html");
+        importComponent("footer-placeholder", "footer.html").then(updateYear);
     </script>
 
 </body>
