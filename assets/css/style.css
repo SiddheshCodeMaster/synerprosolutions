@@ -62,7 +62,7 @@ body.scrolled .navbar {
     font-weight: 600;
     color: #0c6314;
     /* dark text */
-    transition: transform 0.3s, color 0.3s;
+    transition: transform 0.3s, color 0.3s; 
 }
 
 /* Hero animations */
