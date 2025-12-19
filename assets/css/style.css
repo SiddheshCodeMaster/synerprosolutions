@@ -267,7 +267,6 @@ ul li:hover svg {
 
 /* --- PROCESSES PAGE STYLES --- */
 
-/* Removed duplicate min-height and padding-top from here */
 .processes-hero-section h1 {
     font-size: 3.5rem;
 }
@@ -332,7 +331,6 @@ ul li:hover svg {
 /*CASE STUDIES PAGE*/
 
 /* Hero Section */
-/* Removed duplicate min-height and padding-top from here */
 .case-studies-hero-section h1 {
     font-size: 3.5rem;
 }
@@ -341,13 +339,11 @@ ul li:hover svg {
 .case-study-card {
     border: none;
     overflow: hidden;
-    /* To hide overflow from image scaling */
     transition: all 0.3s ease-in-out;
 }
 
 .case-study-card img {
     height: 200px;
-    /* Fixed height for image consistency */
     object-fit: cover;
     transition: transform 0.5s ease;
 }
@@ -382,7 +378,6 @@ ul li:hover svg {
     background-color: #3b850d !important;
 }
 
-/* Quote Box Styling (Matching the green background on the target site) */
 .quote-box {
     background-color: #3b850d;
     /* Eco Green */
@@ -398,7 +393,6 @@ ul li:hover svg {
     margin-top: 15px;
 }
 
-/* Result Boxes (The three boxes showing stats) */
 .result-box {
     border: 1px solid #e9ecef !important;
     transition: all 0.3s;
@@ -409,19 +403,15 @@ ul li:hover svg {
     background-color: #f8f9fa;
 }
 
-/* Sidebar Styling (make it sticky on large screens to stay in view) */
 @media (min-width: 992px) {
     .sidebar-sticky {
         position: sticky;
         top: 100px;
-        /* Adjust based on your fixed header's height */
     }
 }
 
-/* Hover effect for the "Other Case Studies" list */
 .list-group-item-action:hover {
     background-color: #f0fff0 !important;
-    /* Very light green on hover */
 }
 
 /* --- TEAM PAGE STYLES --- */
@@ -430,17 +420,6 @@ ul li:hover svg {
 .case-studies-hero-section h1 {
     font-size: 3.5rem;
 }
-
-/* Team Member Card Styling */
-/* .team-section .team-member-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 5px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} */
 
 .team-section .team-member-img {
     width: 150px;
@@ -498,8 +477,6 @@ ul li:hover svg {
 }
 
 /* Specific Hero Section Style for About Page */
-/* This section was left with the full background property as its gradient color values were different (darker) */
-
 .about-hero-section .lead-xl {
     font-size: 1.75rem;
     opacity: 0.9;
@@ -532,7 +509,6 @@ ul li:hover svg {
     border-color: #3b850d;
 }
 
-/* Vision and Final CTA Section (Dark Background) */
 .vision-cta-section {
     /* Using dark background for strong contrast */
     background-color: #1b3710 !important;
