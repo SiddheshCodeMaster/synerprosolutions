@@ -426,6 +426,8 @@ ul li:hover svg {
     height: 150px;
     object-fit: cover;
     object-position: center top; 
+    margin: 0 auto 15px; 
+    display: block;
     margin-bottom: 15px;
     border-radius: 50%;
     border: 5px solid #fff;
@@ -436,6 +438,9 @@ ul li:hover svg {
     border: 1px solid #e0e0e0;
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .team-section .card:hover {
