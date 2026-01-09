@@ -38,15 +38,19 @@ body.scrolled .navbar {
 .carousel-control-next-icon {
     background-color: #3b850d;
     border-radius: 50%;
-    padding: 10px;
+    padding: 15px; /* Slightly larger for better UX */
+    background-size: 50% 50%;
+}
+
+.clients-section .carousel-item {
+    padding: 0 60px; /* Creates a horizontal buffer for the arrows */
 }
 
 .clients-section h5 {
     display: inline-block;
-    margin: 0 1.5rem;
+    margin: 0.5rem 1rem; /* Adjusted margins for better wrapping */
     font-weight: 600;
     color: #212529;
-    /* dark text */
     transition: transform 0.3s, color 0.3s;
 }
 
@@ -57,12 +61,11 @@ body.scrolled .navbar {
 }
 
 .clients-section h3{
-    display: inline-block;
-    margin: 0 1.5rem;
+    display: block;
+    margin: 0 auto 1.5rem;
     font-weight: 600;
     color: #0c6314;
-    /* dark text */
-    transition: transform 0.3s, color 0.3s; 
+    transition: transform 0.3s, color 0.3s;
 }
 
 /* Hero animations */
