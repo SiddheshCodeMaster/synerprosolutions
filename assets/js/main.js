@@ -64,3 +64,26 @@ window.addEventListener('scroll', () => {
         document.body.classList.remove('scrolled');
     }
 });
+
+// KPI Counter Animation
+const counters = document.querySelectorAll('.counter');
+const speed = 1000; // Lower = faster
+
+counters.forEach(counter => {
+  const start = +counter.innerText; // Start from 108
+  const target = +counter.getAttribute('data-target');
+  const increment = (target - start) / speed;
+
+  const updateCount = () => {
+    const count = +counter.innerText;
+
+    if (count < target) {
+      counter.innerText = Math.ceil(count + increment);
+      setTimeout(updateCount, 20);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  updateCount();
+});
