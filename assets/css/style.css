@@ -430,11 +430,12 @@ ul li:hover svg {
     object-fit: cover;
     object-position: center top; 
     margin: 0 auto 15px; 
-    display: block;
+    /* display: block; */
     margin-bottom: 15px;
     border-radius: 50%;
-    border: 5px solid #fff;
+    /* border: 5px solid #fff; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .team-section .card {
