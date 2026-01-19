@@ -141,14 +141,6 @@ body.scrolled .navbar {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
-.team-section .card img {
-    transition: transform 0.3s;
-}
-
-.team-section .card img:hover {
-    transform: scale(1.05);
-}
-
 .clients-section h5 {
     transition: transform 0.3s, color 0.3s;
 }
@@ -424,18 +416,25 @@ ul li:hover svg {
     font-size: 3.5rem;
 }
 
+.team-section .card img {
+    transition: transform 0.3s;
+}
+
+.team-section .card img:hover {
+    transform: scale(1.05);
+}
+
 .team-section .team-member-img {
     width: 150px;
     height: 150px;
-    object-fit: cover;
-    object-position: center top; 
-    margin: 0 auto 15px; 
-    /* display: block; */
-    margin-bottom: 15px;
     border-radius: 50%;
-    /* border: 5px solid #fff; */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+    object-fit: cover;
+    object-position: center; 
+    image-rendering: auto;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    display: block;
+    margin: 0 auto 15px;
 }
 
 .team-section .card {
@@ -454,28 +453,23 @@ ul li:hover svg {
 
 .team-section .card-title {
     color: #1b3710;
-    /* Darker Green */
     font-weight: 700;
 }
 
 .team-section .card-subtitle {
     color: #3b850d;
-    /* Eco Green */
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-/* Social Icons */
 .team-section .social-links a {
     color: #6c757d;
-    /* Muted color */
     transition: color 0.3s;
 }
 
 .team-section .social-links a:hover {
     color: #3b850d;
-    /* Eco Green on hover */
-}
+} 
 
 /* --- NEW STYLES FOR ABOUT.HTML --- */
 
